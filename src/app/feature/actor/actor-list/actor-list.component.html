@@ -1,0 +1,44 @@
+<div>
+  <section class="heading">
+    <span class="page-title font-weight-bold font-italic">[{{title}}]</span>
+  </section>
+  <table class="table table-striped table-bordered table-hover table-sm">
+    <thead class="thead-dark">
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Birth Date</th>
+      <th scope="col">Gender</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let actor of actors">
+        <td>{{ actor.firstName }}</td>
+        <td>{{ actor.lastName }}</td>
+        <td>{{ actor.birthDate | date: "yyyy-MM-dd" }}</td>
+        <td>{{ actor.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>New Actor</h1>
+  <ul>
+    <li>
+      <label>First Name:</label>
+      <input [(ngModel)]="newActor.firstName" class="rounded" type="text"/>
+    </li>
+    <li>
+      <label>Last Name:</label>
+      <input [(ngModel)]="newActor.lastName" class="rounded" type="text"/>
+    </li>
+    <li>
+      <label>Birth Date:</label>
+      <input [(ngModel)]="newActor.birthDate" class="rounded" type="date"/>
+    </li>
+    <li>
+      <label>Gender:</label>
+      <input [(ngModel)]="newActor.gender" class="rounded" type="text"/>
+    </li>
+  </ul>
+  <span>
+    <button (click)="save()" class="btn btn-sm btn-primary">Save</button>
+  </span>
+</div>
