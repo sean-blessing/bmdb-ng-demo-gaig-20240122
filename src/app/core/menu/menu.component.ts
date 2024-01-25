@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     // populate menuItems with a menu item for each component
     this.menuItems = [
-      new MenuItem("Movie", "/movie/detail", "Movie Detail"),
+      new MenuItem("Movie", "/movie/list", "Movie Detail"),
       new MenuItem("Actor", "/actor/list", "Actor List")
     ];
   }

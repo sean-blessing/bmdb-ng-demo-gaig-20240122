@@ -7,18 +7,28 @@ import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.
 import { ActorListComponent } from './feature/actor/actor-list/actor-list.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './core/menu/menu.component';
+import { MovieListComponent } from './feature/movie/movie-list/movie-list.component';
+import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
+import { MovieCreditsComponent } from './feature/movie/movie-credits/movie-credits.component';
+import { MovieCreateComponent } from './feature/movie/movie-create/movie-create.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieDetailComponent,
     ActorListComponent,
-    MenuComponent
+    MenuComponent,
+    MovieListComponent,
+    MovieEditComponent,
+    MovieCreditsComponent,
+    MovieCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
