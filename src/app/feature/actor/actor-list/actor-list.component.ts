@@ -16,13 +16,13 @@ export class ActorListComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     let firstName: string = "Mark";
     let lastName: string = "Hamill";
-    let birthDate: string = "1951-09-25";
+    let birthDate: string = "09-25-1951";
     let gender: string = "M";
     
     let a1: Actor = new Actor(firstName, lastName, new Date(birthDate), gender);
     this.actors.push(a1);
-    this.actors.push(new Actor("Carrie", "Fisher", new Date("1956-10-21"), "F"));
-    this.actors.push(new Actor("Harrison", "Ford", new Date("1942-07-13"), "M"));
+    this.actors.push(new Actor("Carrie", "Fisher", new Date("10-21-1956"), "F"));
+    this.actors.push(new Actor("Harrison", "Ford", new Date("07-13-1942"), "M"));
   }
 
   save() {

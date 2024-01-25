@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
 import { ActorListComponent } from './feature/actor/actor-list/actor-list.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './core/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieDetailComponent,
-    ActorListComponent
+    ActorListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
